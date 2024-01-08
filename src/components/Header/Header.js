@@ -1,5 +1,4 @@
 import { HeaderContainer } from './Header.styled';
-import { NavLink } from 'react-router-dom';
 import avatar from '../../assets/Header/avatar.jpg';
 import { AvatarLink, AvatarWrapper, AvatarImage } from './Header.styled';
 
