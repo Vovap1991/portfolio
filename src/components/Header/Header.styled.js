@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container } from 'components/StyledComponents/Container';
 
 export const HeaderContainer = styled(Container)`
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: var(--black-secondary);
