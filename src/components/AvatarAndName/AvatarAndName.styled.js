@@ -34,7 +34,7 @@ export const AvatarImage = styled.img`
 export const Name = styled.p`
   color: var(--white);
   font-size: 15px;
-  transition: var(--transition-dur-and-fun);
+  transition: color var(--transition-dur-and-fun);
 
   ${AvatarLink}:hover & {
     color: var(--green-light);
