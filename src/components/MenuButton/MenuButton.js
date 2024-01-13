@@ -1,10 +1,12 @@
 import sprite from '../../assets/sprite.svg';
-import { MenuIcon } from './MenuButton.styled';
+import { MenuIcon, ModalMenuButton } from './MenuButton.styled';
 
-export const MenuButton = () => {
+export const MenuButton = ({ onClick }) => {
   return (
-    <MenuIcon>
-      <use href={`${sprite}#menu`}></use>
-    </MenuIcon>
+    <ModalMenuButton onClick={onClick}>
+      <MenuIcon>
+        <use href={`${sprite}#menu`}></use>
+      </MenuIcon>
+    </ModalMenuButton>
   );
 };
