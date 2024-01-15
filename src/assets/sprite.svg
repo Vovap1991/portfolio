@@ -6,5 +6,14 @@
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.9394" d="M27.151 18.586h-23.273"></path>
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.9394" d="M27.151 23.758h-23.273"></path>
 </symbol>
+ <symbol id="close" viewBox="0 0 32 32">
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M16 29.333c7.333 0 13.333-6 13.333-13.333s-6-13.333-13.333-13.333c-7.333 0-13.333 6-13.333 13.333s6 13.333 13.333 13.333z">
+            </path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M12.227 19.773l7.547-7.547"></path>
+            <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2"
+                d="M19.773 19.773l-7.547-7.547"></path>
+        </symbol>
 </defs>
 </svg>

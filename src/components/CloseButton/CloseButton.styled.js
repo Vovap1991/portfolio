@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
-export const ModalMenuButton = styled.button`
+export const CloseModalMenu = styled.button`
+  position: absolute;
+  top: 20px;
+  right: 10px;
   display: flex;
   align-items: center;
   padding: 0;
@@ -15,7 +18,7 @@ export const ModalMenuButton = styled.button`
   }
 `;
 
-export const MenuIcon = styled.svg`
+export const CloseIcon = styled.svg`
   width: 28px;
   height: 28px;
   stroke: var(--white);
