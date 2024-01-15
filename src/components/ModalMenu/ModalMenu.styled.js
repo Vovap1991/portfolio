@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const Backdrop = styled.div`
   z-index: 999;
@@ -26,8 +26,26 @@ export const Backdrop = styled.div`
   }
 `;
 
+const modalOpenAnimation = keyframes`
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+`;
+
+// const modalCloseAnimation = keyframes`
+//   from {
+//     transform: translateX(0);
+//   }
+//   to {
+//     transform: translateX(100%);
+//   }
+// `;
+
 export const ModalMenuWrapper = styled.div`
-  position: absolute;
+  position: fixed;
   z-index: 1000;
   top: 0;
   right: 0;
@@ -37,10 +55,10 @@ export const ModalMenuWrapper = styled.div`
   box-shadow: 0 4px 14px 0 rgba(227, 255, 168, 0.2);
   background-color: black;
   padding: 24px 10px;
-  transform: translateY(-220px);
-  transition: transform 1000ms linear;
+  transform: translateX(100%);
+  animation: ${modalOpenAnimation} var(--transition-modal);
 
   ${Backdrop}.active & {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 `;

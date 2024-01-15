@@ -22,6 +22,9 @@
 
   /* transition */
   --transition-dur-and-fun: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* transition for modal */
+  --transition-modal: 500ms ease-in-out forwards;
 }
 
 html {
