@@ -7,16 +7,13 @@ export const Backdrop = styled.div`
   opacity: 0;
   background: transparent;
   margin: 0 auto;
-
   position: fixed;
   top: 0;
   left: 0;
-
   display: flex;
   align-items: flex-end;
   justify-content: end;
   pointer-events: none;
-
   transition: opacity var(--transition-dur-and-fun);
   opacity: 0;
 
@@ -45,6 +42,9 @@ const modalOpenAnimation = keyframes`
 // `;
 
 export const ModalMenuWrapper = styled.div`
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -54,7 +54,8 @@ export const ModalMenuWrapper = styled.div`
   border-radius: 12px;
   box-shadow: 0 4px 14px 0 rgba(227, 255, 168, 0.2);
   background-color: black;
-  padding: 24px 10px;
+  padding: 25px 15px;
+  padding-top: 60px;
   transform: translateX(100%);
   animation: ${modalOpenAnimation} var(--transition-modal);
 

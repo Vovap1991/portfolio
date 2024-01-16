@@ -1,4 +1,5 @@
 import { CloseButton } from 'components/CloseButton/CloseButton';
+import { HeaderNav } from 'components/HeaderNav/HeaderNav';
 import { useEffect } from 'react';
 import { ModalMenuWrapper, Backdrop } from './ModalMenu.styled';
 
@@ -27,6 +28,7 @@ export const ModalMenu = ({ setShowModalMenu, showModalMenu }) => {
     >
       <ModalMenuWrapper onClick={e => e.stopPropagation()}>
         <CloseButton onClick={handleCloseButtonClick} />
+        <HeaderNav />
       </ModalMenuWrapper>
     </Backdrop>
   );
