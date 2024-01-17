@@ -5,10 +5,13 @@ export const HeaderNav = () => {
     <nav>
       <NavList>
         <li>
-          <NavListItem to="/">About</NavListItem>
+          <NavListItem to="about">About</NavListItem>
         </li>
         <li>
-          <NavListItem to="/">Portfolio</NavListItem>
+          <NavListItem to="portfolio">Portfolio</NavListItem>
+        </li>
+        <li>
+          <NavListItem to="resume">Resume</NavListItem>
         </li>
       </NavList>
     </nav>
